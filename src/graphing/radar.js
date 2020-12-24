@@ -408,7 +408,7 @@ const Radar = function (size, radar) {
     selectQuadrant.bind({}, quadrant.order, quadrant.startAngle)()
     const selectedDesc = d3.select('#blip-description-' + blip.number())
     d3.select('.blip-item-description.expanded').node() !== selectedDesc.node() &&
-        d3.select('.blip-item-description.expanded').classed('expanded', false)
+      d3.select('.blip-item-description.expanded').classed('expanded', false)
     selectedDesc.classed('expanded', true)
 
     d3.selectAll('g.blip-link').attr('opacity', 0.3)
@@ -435,7 +435,7 @@ const Radar = function (size, radar) {
       .append('div')
       .attr('class', 'radar-title__text')
       .append('h1')
-      .text(document.title)
+      .text('NCR - BSP Technology Radar')
       .style('cursor', 'pointer')
       .on('click', redrawFullRadar)
 
@@ -499,9 +499,9 @@ const Radar = function (size, radar) {
       .attr('class', 'footer-content')
       .append('p')
       .html('Powered by <a href="https://www.thoughtworks.com"> ThoughtWorks</a>. ' +
-      'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
-      'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
-      'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
+        'By using this service you agree to <a href="https://www.thoughtworks.com/radar/tos">ThoughtWorks\' terms of use</a>. ' +
+        'You also agree to our <a href="https://www.thoughtworks.com/privacy-policy">privacy policy</a>, which describes how we will gather, use and protect any personal data contained in your public Google Sheet. ' +
+        'This software is <a href="https://github.com/thoughtworks/build-your-own-radar">open source</a> and available for download and self-hosting.')
   }
 
   function mouseoverQuadrant (order) {
